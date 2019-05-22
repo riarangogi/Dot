@@ -85,7 +85,7 @@ fi
 # some more ls aliases
 alias ll='ls -lh'
 alias la='ls -Alh'
-#alias l='ls -CF'
+alias mnt='sudo mount /dev/sda5 ~/Documentos'
 
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
