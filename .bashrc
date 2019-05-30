@@ -87,6 +87,8 @@ alias ll='ls -lh'
 alias la='ls -Alh'
 alias mnt='sudo mount /dev/sda5 ~/Documentos'
 alias umnt='sudo umount /dev/sda5'
+alias sas="google-chrome --new-window http://localhost:10080 & vboxmanage startvm 'SAS University Edition'"
+alias sasoff="vboxmanage controlvm 'SAS University Edition' poweroff"
 
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
