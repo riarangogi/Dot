@@ -177,6 +177,6 @@ xterm*|rxvt*)
     ;;
 esac
 # added by Anaconda3 installer
-export PATH="/home/riarangogi/anaconda3/bin:$PATH"
+export PATH="/home/anaconda3/bin:$PATH"  # commented out by conda initialize
 
 export PATH="/media/riarangogi/DOCUMENTOS/Settups/Linux/ampl.linux64:$PATH"
