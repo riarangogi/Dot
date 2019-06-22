@@ -4,6 +4,8 @@
 set encoding=utf-8	"Necessaary to show unicode glyphs
 set number	"always show line numbers
 set nowrap	"don't wrap line
+set list
+set listchars=tab:→\ ,space:·,eol:⏎	"show hidden character
 set autoindent
 set tabstop=4	"a tab is four spaces
 set shiftwidth=4    " to control how many columns text is indented with the reindent operations
@@ -18,4 +20,4 @@ so ~/.vim/plugins.vim
 
 
 "3- defined the python interprete
-let g:ycm_server_python_interpreter='/home/riarangogi/anaconda3/bin/python'
+let g:ycm_server_python_interpreter='/home/anaconda3/bin/python'

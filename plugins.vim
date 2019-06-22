@@ -7,6 +7,7 @@ Plugin 'VundleVim/Vundle.vim'
 " (*) Aqui agregamos las líneas <Plugin> para incorporar nuevos plugins a Vim
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'jiangmiao/auto-pairs'		
+Plugin 'davidhalter/jedi-vim'
 Plugin 'Yggdroot/indentLine'
  
 call vundle#end() " required
