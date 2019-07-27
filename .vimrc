@@ -13,7 +13,7 @@ set softtabstop=4   " to control how many columns vim uses when you hit Tab in i
 set noexpandtab     "Each indentation level is one tab.
 let g:indentLine_color_term = 239   "change color line ident
 let g:indentLine_char = '┊' "select tabs character
-    
+autocmd FileType java setlocal omnifunc=javacomplete#Complete
 
 "2- vundle: The plugin manager for vim
 so ~/.vim/plugins.vim
