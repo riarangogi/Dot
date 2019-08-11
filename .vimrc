@@ -4,6 +4,9 @@
 set encoding=utf-8	"Necessaary to show unicode glyphs
 set number	"always show line numbers
 set nowrap	"don't wrap line
+set colorcolumn=80
+highlight ColorColumn ctermbg=7 guibg=lightgrey "line color
+set undofile	"persist undo history between file editing sessions
 set list
 set listchars=tab:→\ ,space:·,eol:⏎	"show hidden character
 set autoindent
@@ -13,6 +16,7 @@ set softtabstop=4   " to control how many columns vim uses when you hit Tab in i
 set noexpandtab     "Each indentation level is one tab.
 let g:indentLine_color_term = 239   "change color line ident
 let g:indentLine_char = '┊' "select tabs character
+let g:scala_sort_across_groups = 1
 autocmd FileType java setlocal omnifunc=javacomplete#Complete
 
 "2- vundle: The plugin manager for vim
