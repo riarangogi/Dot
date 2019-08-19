@@ -13,6 +13,9 @@ Plugin 'artur-shaik/vim-javacomplete2'
 Plugin 'derekwyatt/vim-scala'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
- 
+Plugin 'kien/ctrlp.vim'
+Plugin 'scrooloose/nerdtree'
+Plugin 'micha/vim-colors-solarized'
+
 call vundle#end() " required
 filetype plugin indent on " required
