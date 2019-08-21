@@ -39,6 +39,11 @@ case ${SOLARIZED_THEME:-dark} in
     *)     CURRENT_FG='blue';;
 esac
 
+case ${SOLARIZED_THEME:-light} in
+    light) CURRENT_FG='green';;
+    *)     CURRENT_FG='blue';;
+esac
+
 # Special Powerline characters
 
 () {
@@ -90,7 +95,7 @@ prompt_end() {
 # Context: user@hostname (who am I and where am I)
 prompt_context() {
   if [[ "$USER" != "$DEFAULT_USER" || -n "$SSH_CLIENT" ]]; then
-    prompt_segment black green "%(!.%{%F{yellow}%}.)%n"
+    prompt_segment None green "%(!.%{%F{yellow}%}.)%n"
   fi
 }
 
@@ -112,9 +117,9 @@ prompt_git() {
     dirty=$(parse_git_dirty)
     ref=$(git symbolic-ref HEAD 2> /dev/null) || ref="➦ $(git rev-parse --short HEAD 2> /dev/null)"
     if [[ -n $dirty ]]; then
-      prompt_segment yellow black
+      prompt_segment None yellow 
     else
-      prompt_segment green black 
+      prompt_segment None green 
     fi
 
     if [[ -e "${repo_path}/BISECT_LOG" ]]; then
@@ -199,7 +204,7 @@ prompt_hg() {
 
 # Dir: current working directory
 prompt_dir() {
-  prompt_segment black $CURRENT_FG "%1~"
+  prompt_segment None blue "%1~"
 }
 
 # Virtualenv: current working virtualenv
@@ -221,7 +226,7 @@ prompt_status() {
   [[ $UID -eq 0 ]] && symbols+="%{%F{yellow}%}⚡"
   [[ $(jobs -l | wc -l) -gt 0 ]] && symbols+="%{%F{cyan}%}⚙"
 
-  [[ -n "$symbols" ]] && prompt_segment black default "$symbols"
+  [[ -n "$symbols" ]] && prompt_segment None default "$symbols"
 }
 
 #AWS Profile:
