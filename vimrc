@@ -5,7 +5,7 @@ set encoding=utf-8	"Necessaary to show unicode glyphs
 set undofile	"persist undo history between file editing sessions
 
 set colorcolumn=80
-highlight ColorColumn ctermbg=7 guibg=lightgrey "line color
+highlight ColorColumn ctermbg=239 guibg=grey "line color
 
 set number	"always show line numbers
 highlight LineNr cterm=NONE ctermfg=239 gui=NONE guifg=#000066	"change numbers's color
@@ -13,7 +13,7 @@ set nowrap	"don't wrap line
 
 set list
 set listchars=tab:→\ ,space:·,eol:↲	"show hidden character
-highlight SpecialKey cterm=NONE ctermfg=66 gui=NONE guifg=#000066	"change listchars's color: tab and spaces
+highlight SpecialKey cterm=NONE ctermfg=239 gui=NONE guifg=#000066	"change listchars's color: tab and spaces
 highlight NonText cterm=NONE ctermfg=239 gui=NONE guifg=#000066	"change listchars's color: eol
 
 set autoindent
